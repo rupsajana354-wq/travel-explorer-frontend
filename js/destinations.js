@@ -1,18 +1,18 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-    // URL থেকে city name নাও
+    
     const params = new URLSearchParams(window.location.search);
     const city = params.get('city');
   
     const gallery = document.getElementById('gallery');
   
-    // Safety check
+   
     if (!city) {
       gallery.innerHTML = "<p>No city selected</p>";
       return;
     }
   
-    // Auto load images
+    
     for (let i = 1; i <= 6; i++) {
       const img = document.createElement('img');
       img.src ="../public/images/+ city + "/" +".jpg;
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
     container.appendChild(div);
   });
 });
-fetch('http://localhost:5000/api/destinations')
+fetch("https://travel-explorer-backend.onrender.com/api/destinations")
 .then(res => res.json())
 .then(data => {
   const container = document.getElementById('destinations');
