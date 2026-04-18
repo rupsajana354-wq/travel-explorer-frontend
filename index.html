@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Travel Explorer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../public/css/style.css">
+  <link rel="stylesheet" href="../public/css/animations.css">
+</head>
+<body>
+
+<header class="hero">
+  <nav class="navbar">
+    <h1>Travel Explorer </h1>
+    <ul>
+      <li><a href="destinations.html">Destinations</a></li>
+      <li><a href="#explore">Explore</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero-content">
+    <h2>Explore The World</h2>
+    <p>Luxury • Adventure • Culture</p>
+    <button id="exploreBtn">Start Journey</button>
+  </div>
+</header>
+<section id="explore" style="padding:80px; background:#111; color:#e2d8e9;">
+  <h2 style="text-align:center;">AI Travel Suggestion</h2>
+
+  <div style="max-width:400px; margin:40px auto; text-align:center;">
+    
+    <input type="number" id="budget" placeholder="Enter Budget"
+           style="width:100%; padding:12px; margin-bottom:15px;">
+
+    <select id="mood" style="width:100%; padding:12px;">
+      <option value="">Select Mood</option>
+      <option value="romantic">Romantic</option>
+      <option value="adventure">Adventure</option>
+    </select>
+
+    <button id="suggestBtn" style="margin-top:20px; padding:12px 30px;">
+      Suggest Destination
+    </button>
+
+    <p id="result" style="margin-top:25px; font-size:20px;"></p>
+
+  </div>
+</section>
+<script src="../public/js/aiLogic.js"></script>
+<script src="../public/js/main.js"></script>
+</body>
+</html>
+</body>
+</html>
